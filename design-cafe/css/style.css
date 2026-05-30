@@ -1,0 +1,559 @@
+@charset "utf-8";
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Noto Sans JP", sans-serif;
+    background-color: #e9d9c0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: normal;
+}
+.sp-onry{
+    display: none;
+}
+
+.section_inner{
+    max-width: 1000px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 4.4%;
+    padding-right: 4.4%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+
+}
+.header_nav ul{
+    display: flex;
+    gap: 48px;
+}
+.header_nav a{
+    color: #ffffff;
+    font-family: "Alatsi", sans-serif;
+}
+
+.logo{
+    width: 434px;
+}
+
+section{
+    margin: 0 auto;
+    text-align: left;
+}
+
+.intro{
+    font-family: "Alatsi", sans-serif;
+    font-size: 26px;
+    text-align: center;
+    padding: 132px 57px 40px 57px;
+}
+
+.title{
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 64px;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0 106px 16px 106px;
+}
+
+.note{
+     font-family: "Noto Sans JP", sans-serif;
+     font-size: 24px;
+     line-height: 1.5;
+     text-align: center;
+     margin: 16px 0 144px 0;
+}
+
+.content{
+    display: flex;
+    align-items: start;
+}
+.content picture {
+    width: 44%;
+    border-bottom-right-radius: 64px;
+}
+.content img {
+    border-bottom-right-radius: 64px;
+}
+.content > div{
+    width: 56%;
+}
+
+.title2{
+    font-family: "Diplomata SC", serif;
+    font-size: 40px;
+    color: red;
+    margin: 0 0 40px 40px;
+}
+
+.subtitle{
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 32px;
+    line-height: 1.5;
+    margin: 40px 0 16px 40px;
+}
+
+.text{
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 16px 0 127px 40px;
+}
+
+.menu{
+    display: flex;
+    gap: 32px;
+}
+.menu img{
+    border-top-right-radius: 64px;
+}
+
+.title3{
+    font-family: "Diplomata SC", serif;
+    font-size: 40px;
+    text-align: center;
+    color: red;
+    margin: 144px 0 32px 0px;
+}
+
+.content-menu{
+    font-family: "Diplomata SC", serif;
+    font-size: 26px;
+    color: red;
+    margin: -13px 0 6px 0px;
+}
+
+.text2{
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 14px;
+}
+
+.gallery{
+    display: flex;
+}
+.gallery img{
+    width: 20%;
+}
+
+#event ul{
+    background-color: #ffffff;
+    border: 1px solid #4f270b;
+    padding: 32px 0;
+}
+#event li{
+    display: flex;
+    max-width: 630px;
+    margin: 0 auto 16px;
+    font-size: 20px;
+    gap: 40px;
+}
+#event li:last-child{
+    margin-bottom: 0;
+}
+
+body{
+  margin: 0;
+}
+
+iframe{
+    width: 100%;
+    filter: grayscale(100%) invert(92%) contrast(83%);
+}
+
+
+#footer{
+    background-color: #ffffff; 
+    padding-bottom: 60px;
+}
+.footer_inner{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    padding-top: 80px;
+    margin: 0 auto;
+}
+.footer_inner li{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+#footer h2{
+    font-family: "Diplomata SC", serif;
+    font-size: 28px;
+    color: #4f270b;
+}
+
+#footer p{
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 16px;
+}
+.footer_item-title{
+    width: 104px;
+}
+.footer_item-details{
+    width: calc(100%-104px);
+}
+.copyright{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.to-top{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+.to-top img{
+    width: 144px;
+}
+.hamburger,
+.header_nav-sp{
+    display: none;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .hamburger{
+        display: block;
+        width: 54px;
+        height: 54px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 99999;
+    }
+    .header_nav{
+        display: none;
+    }
+    .hamburger span{
+        display: block;
+        width: 40px;
+        height: 2px;
+        background-color: #ffffff;
+        position: absolute;
+        left: 8px;
+        top: 26px;
+    }
+    .hamburger::before{
+        content: "";
+        width: 40px;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        left: 8px;
+        top: 13px;
+        transition: 0.3s;
+    }
+
+    .hamburger::after{
+        content: "";
+        width: 40px;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        left: 8px;
+        bottom: 13px;
+        transition: 0.3s;
+    }
+    .open span{
+    background-color: transparent;
+    }
+    .open::before{
+    transform: rotate(45deg);
+    top: 28px;
+    }
+    .open::after{
+    transform: rotate(-45deg);
+    bottom: 24px;
+    }  
+    .header_nav-sp{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        background-color: #000000a1;
+    }
+
+    .header_nav-sp a{
+        color: #fff;
+        font-size: 36px;
+        font-family: "Alatsi", sans-serif;
+    }
+    .header_nav-sp ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        gap: 48px;
+    }  
+}
+
+@media screen  and (max-width: 1100px){
+    .title{
+        font-size: 50px;
+    }
+    .subtitle{
+        font-size: 30px;
+    }
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    body{
+    font-family: "Noto Sans JP", sans-serif;
+    background-color: #e9d9c0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: normal;
+}
+.sp-onry{
+    display: block;
+}
+
+.section_inner{
+    max-width: 768px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+/* #header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 4.4%;
+    padding-right: 4.4%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+} */
+/* .header_nav ul{
+    display: flex;
+    gap: 48px;
+}
+.header_nav a{
+    color: #ffffff;
+    font-family: "Alatsi", sans-serif;
+} */
+
+    .logo{
+        width: 244px;
+    }
+
+    section{
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .intro{
+        font-family: "Alatsi", sans-serif;
+        font-size: 16px;
+        text-align: center;
+        padding: 126px 0 40px 0;
+    }
+
+    .title{
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 31px;
+        line-height: 1.5;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .note{
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+        margin: 24px 0 80px 0;
+    }
+
+    .content{
+        display: block;
+        align-items: starts;
+    }
+    .content img {
+        width: 100%;
+        border-bottom-right-radius: 0;
+    }
+    .content > div{
+        width: 100%;
+    }
+
+    .title2{
+        font-family: "Diplomata SC", serif;
+        font-size: 32px;
+        color: red;
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    .subtitle{
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 32px;
+        line-height: 1.5;
+        text-align: left;
+        margin: 40px 0 16px 0;
+    }
+
+    .text{
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 14px;
+        line-height: 1.8;
+        text-align: left;
+        margin: 16px 0 80px 0;
+    }
+
+    .menu{
+        display: block;
+        /* gap: 32px; */
+
+    .menu img{
+        border-top-right-radius: 64px;
+        }
+    }
+
+    .title3{
+        font-family: "Diplomata SC", serif;
+        font-size: 32px;
+        text-align: center;
+        color: red;
+        margin: 80px 0 32px 0px;
+    }
+
+    .content-menu{
+        font-family: "Diplomata SC", serif;
+        font-size: 26px;
+        color: red;
+        margin: -13px 0 6px 0px;
+    }
+
+    .text2{
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 14px;
+        margin: 6pt 0 40px 0;
+        }
+
+    .gallery{
+        display: flex;
+    }
+    .gallery img{
+        width: 20%;
+    }
+
+    #event ul{
+        background-color: #ffffff;
+        border: 1px solid #4f270b;
+        margin: 32px 0;
+    }
+    #event li{
+        display: block;
+        margin: 0 auto 32px;
+        font-size: 16px;
+        margin: 32px 20px;
+    }
+    #event li:first-child{
+        margin-top: 0;
+    }
+    #event li:last-child{
+        margin-bottom: 0;
+    }
+    .event-date{
+        margin-bottom: 8p;
+    }
+    .event-title{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    body{
+    margin: 0;
+    }
+
+    iframe{
+        width: 100%;
+        filter: grayscale(100%) invert(92%) contrast(83%);
+    }
+
+
+    #footer{
+        background-color: #ffffff; 
+        padding-bottom: 60px;
+    }
+    .footer_inner{
+        display: block;
+        justify-content: space-between;
+        max-width: 768px;
+        padding-top: 80px;
+        margin: 0 auto;
+    }
+    .footer_inner li{
+        display: block;
+        margin-bottom: 16px;
+    }
+
+    #footer h2{
+        font-family: "Diplomata SC", serif;
+        font-size: 24px;
+        color: #4f270b;
+        margin: 0 20px 39px 20px;
+    }
+    #footer li{
+        margin: 39px 20px 24px 20px;
+    }
+
+    #footer p{
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 16px;
+    }
+    .footer_item-title{
+        width: 104px;
+        margin-bottom: 8px;
+    }
+    .footer_item-details{
+        width: calc(100%-104px);
+    }
+    .copyright p{
+        margin: 248px 20px 80px 20px;
+    }
+
+
+
+    .to-top{
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+    }
+    .to-top img{
+        width: 144px;
+    }
+}
+
+.slick-dots li button::before {
+    font-size: 10px;
+}
